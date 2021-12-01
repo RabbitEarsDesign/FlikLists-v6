@@ -1,0 +1,26 @@
+.form {
+  max-width: 100%;
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form input {
+  background: #e08ccb;
+  color: #fff;
+  border: 1px solid #c51499;
+  padding: 1rem 1.2rem;
+  margin: 0 auto;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+.form input::placeholder {
+  color: #fff;
+}
+
+.search {
+  height: 100px;
+  display: grid;
+  place-items: center;
+}

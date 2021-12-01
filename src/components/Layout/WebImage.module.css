@@ -1,0 +1,10 @@
+.img {
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+}
+
+.img img {
+  width: 250px;
+  height: 350px;
+}

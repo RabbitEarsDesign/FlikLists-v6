@@ -1,0 +1,19 @@
+.searched-movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem auto;
+  padding: 0;
+  width: 100%;
+}
+
+@media (max-width: 999px) {
+  .searched-movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .searched-movies {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
