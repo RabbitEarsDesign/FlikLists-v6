@@ -34,7 +34,7 @@ function MainHeader() {
           {authContext.isLoggedIn && (
             <li>
               <NavLink activeClassName={classes.active} to="/list">
-                My List
+                List
               </NavLink>
             </li>
           )}

@@ -4,8 +4,8 @@
   background: #232232;
   background: var(--secondary-color);
   box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.4);
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   z-index: 10;
 }
 
@@ -37,6 +37,29 @@ a {
   margin: 0 5px;
   color: var(--primary-color);
   text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .header a {
+    font-size: 0.75rem;
+    padding: 5px;
+  }
+
+  .header .img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header button {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  .nav {
+    margin: 0 2%;
+    justify-content: space-around;
+  }
 }
 
 .flex {

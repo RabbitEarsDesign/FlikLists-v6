@@ -18,16 +18,11 @@
 }
 
 .imageContainer img {
-  width: 400px;
-  height: 400px;
+  /* width: 400px;
+  height: 400px; */
+  width: auto;
+  height: auto;
   border-radius: 50px;
-}
-
-@media (max-width: 1000px) {
-  .imageContainer img {
-    width: 350px;
-    height: 350px;
-  }
 }
 
 @media (max-width: 767px) {

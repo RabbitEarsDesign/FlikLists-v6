@@ -43,6 +43,14 @@ function MyList() {
     );
   }, [applyData, authContext.localId, sendRequest]);
   console.log(movies);
+
+  const removeMovieHandler = (id) => {
+    sendRequest({
+      method: "DELETE",
+      url: `https://fliklists-default-rtdb.firebaseio.com/movies/${authContext.localId}/${id}.json`,
+    });
+  };
+
   const myMovies = movies.map((movie) => {
     return (
       <SavedMovie
@@ -58,6 +66,7 @@ function MyList() {
         title={movie.title}
         overview={movie.overview}
         button={true}
+        removeMovie={removeMovieHandler}
       />
     );
   });

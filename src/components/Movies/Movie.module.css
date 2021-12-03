@@ -49,8 +49,6 @@ a {
 }
 
 .imageContainer img {
-  width: 300px;
-  height: 350px;
   border-radius: 50px;
   background-size: cover;
 }
@@ -137,11 +135,30 @@ a {
   color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .imageContainer img {
     width: 500px;
     height: 600px;
     border-radius: 50px;
     background-size: cover;
+  }
+}
+
+@media (max-width: 550px) {
+  .imgContainer img {
+    width: 100px;
+    height: 100px;
+  }
+} */
+
+@media (max-width: 300px) {
+  .detailsBottom {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .title {
+    bottom: 0px;
+    font-size: 1.2rem;
   }
 }
